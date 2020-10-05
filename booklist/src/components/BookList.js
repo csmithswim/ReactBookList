@@ -11,13 +11,11 @@ const BookList = () => {
                 { books.map(book => {
                     return ( <BookDetails book={book} key={book.id} />);
                 })}
-
             </ul>
         </div>
-
     ) : (
         <div className="empty">No books to Read. Hello free time :) </div>
-    )
+        )
 }
 
 export default BookList; 
